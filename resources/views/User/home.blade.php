@@ -68,7 +68,10 @@ https://templatemo.com/tm-546-sixteen-clothing
               @if (Route::has('login'))
                 
                     @auth
-                       <li> <a class="nav-link" href="{{ url('/dashboard') }}" >Dashboard</a></li>
+                       <li> 
+                        <a class="nav-link" href="{{ url('/dashboard') }}" >Dashboard</a>
+                      
+                      </li>
                     @else
                     <li> <a class="nav-link" href="{{ route('login') }}" >Log in</a></li>
 
